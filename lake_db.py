@@ -76,6 +76,7 @@ def initialize_source(db):
 
 def initialize_receiver(db):
     from publish.catalog import initialize_catalog
+    from publish.switch_store import initialize_switch
     from transfer.attempts import initialize_attempts
     from transfer.completions import initialize_completions
     from transfer.operations import initialize_operations
@@ -84,6 +85,7 @@ def initialize_receiver(db):
     initialize_operations(db)
     initialize_completions(db)
     initialize_catalog(db)
+    initialize_switch(db)
 
 
 def _open(path, initialize):

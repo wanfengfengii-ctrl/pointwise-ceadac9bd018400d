@@ -1,10 +1,16 @@
 from lake_db import NotReady, StateError, require_label
 from publish.catalog import commit_publication
 from publish.receipts import find_receipt_by_request
+from publish.switch import advance_switch, configure_switch, prepare_switch, receive_switch
 from publish.verify import verify_materials
 from transfer.attempts import get_attempt
 from transfer.completions import list_completions
 from transfer.operations import list_operations
+
+__all__ = [
+    'publish', 'configure_switch', 'prepare_switch', 'advance_switch', 'receive_switch',
+]
+
 
 
 def publish(receiver, port, request_id):
