@@ -1,0 +1,11 @@
+{
+  "day": "2026-04-18",
+  "a": [
+    {"segment_id": "west", "provenance": "station-west/A", "rows": [[5, "west-sheet/A/1"]]},
+    {"segment_id": "east", "provenance": "station-east/A", "rows": [[7, "east-sheet/A/1"]]}
+  ],
+  "b": [
+    {"segment_id": "west", "provenance": "station-west/B", "rows": [[11, "west-sheet/B/1"]]},
+    {"segment_id": "east", "provenance": "station-east/B", "rows": [[13, "east-sheet/B/1"]]}
+  ]
+}
